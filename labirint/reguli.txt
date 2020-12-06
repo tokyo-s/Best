@@ -1,0 +1,150 @@
+REGULI
+======
+
+$ : Începutul drumului, te vei mișca o poziție în jos.
+
+              $ <- (1) Începi aici
+              x <- (2) Te miști aici
+
+@ : Sfârșitul drumului, vezi flagul.
+
+# : Nu fă nimic.
+
+( : Scoți din STIVĂ și adaugi caracterul la începutul șirului flagului, apoi sari la stânga cu numărul de poziții specificat la dreapta de "(".
+
+              xooooooooooo(12
+              ^           ^^
+              |           ||
+              |           |+- (2) Citești acest număr.
+              |           +-- (1) Scoți din STIVĂ și adaugi la începutul șirului flagului.
+              +-------------- (3) Apoi sari aici.
+
+) : Scoți din STIVĂ și adaugi caracterul la sfârșitul șirului flagului, apoi sari la dreapta cu numărul de poziții specificat la stânga de "(".
+
+              21)ooooooooooox
+              ^ ^           ^
+              | |           |
+              | |           +- (3) Apoi sari aici.
+              | +------------- (1) Scoți din STIVĂ și adaugi la sfârșitul șirului flagului.
+              +--------------- (2) Citești acest număr.
+
+- : Ștergi primul caracter din șirul flagului, apoi sari deasupra cu numărul de poziții specificat mai jos.
+
+              x <- (3) Apoi sari aici.
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              - <- (1) Ștergi primul caracter din șirul flagului.
+              1 <- (2) Citești acest număr.
+              2
+
++ : Ștergi ultimul caracter din șirul flagului, apoi sari în jos cu numărul de poziții specificat mai sus.
+
+              2
+              1 <- (2) Citești acest număr
+              + <- (1) Ștergi ultimul caracter din șirul flagului.
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              x <- (3) Apoi sari aici.
+
+% : Inversează șirul flagului, apoi sari în jos o poziție.
+
+              % <- (1) Inversează șirul flagului.
+              x <- (2) Apoi sari aici.
+
+[ : Citește caracterul din dreapta și adaugă-l în STIVĂ, apoi sari la caracterul din dreapta lui.
+
+              [cx
+               ^^
+               ||
+               |+- (2) Apoi sari aici.
+               +-- (1) Citește acest caracter și adaugă-l în STIVĂ.
+
+] : Citește caracterul din stânga și adaugă-l în STIVĂ, apoi sari la caracterul din stânga lui.
+
+              xc]
+              ^^
+              ||
+              |+- (1) Citește acest caracter și adaugă-l în STIVĂ
+              +-- (2) Apoi sari aici
+
+* : Citește caracterul de deasupra și adaugă-l în STIVĂ, apoi sari la caracterul de deasupra lui.
+
+              x <- (2) Apoi sari aici
+              c <- (1) Citește caracterul și adaugă-l în STIVĂ.
+              *
+
+. : Citește caracterul mai jos și adaugă-l în STIVĂ, apoi sari la caracterul de mai jos de el.
+
+              .
+              c <- (1) Citește caracterul și adaugă-l în STIVĂ.
+              x <- (2) Apoi sari aici
+
+< : Sari la stânga cu numărul de poziții specificate la dreapta.
+
+              xooooooooooo<12
+              ^            ^
+              |            |
+              |            +- (1) Citești acest număr.
+              +-------------- (2) Apoi sari aici.
+              
+> : Sari la dreapta cu numărul de poziții specificate la dreapta.
+
+              21>ooooooooooox
+              ^             ^
+              |             |
+              |             +- (2) Apoi sari aici.
+              +--------------- (1) Citești acest număr.
+
+^ : Sari deasupra cu numărul de caractere specificat mai jos.
+
+              x <- (2) Apoi sari aici.
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              ^
+              1 <- (1) Citești acest număr.
+              2
+
+v : Sari mai jos cu numărul de caractere specificat mai jos.
+
+              2
+              1 <- (1) Citești acest număr.
+              v
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              o
+              x <- (2) Apoi sari aici.
